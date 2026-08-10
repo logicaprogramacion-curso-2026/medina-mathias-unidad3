@@ -1,0 +1,52 @@
+// ========================================================
+// Taller 10: Diagrama de Flujo y Funciones (Petición HTTP a LLM)
+// Alumno: Mathias Medina
+// ========================================================
+
+// Función 1: Construye el objeto de solicitud HTTP con el prompt
+Funcion solicitud <- CrearPeticionHTTP(promptUsuario)
+    Definir solicitud Como Cadena
+    solicitud <- "POST /api/v1/generate HTTP/1.1\nHeader: Authorization Bearer TOKEN\nBody: " + promptUsuario
+FinFuncion
+
+// Función 2: Simula el procesamiento del LLM y generación de respuesta
+Funcion respuestaLLM <- ProcesarPromptLLM(prompt)
+    Definir respuestaLLM Como Cadena
+    Escribir "[Servidor LLM] Procesando tokens y contexto..."
+    respuestaLLM <- "HTTP/1.1 200 OK\nBody: Respuesta generada por la IA para el prompt: " + prompt
+FinFuncion
+
+// Algoritmo Principal: Controla el flujo completo
+Algoritmo Taller10_PeticionHTTP_LLM
+    Definir prompt, peticionHTTP, respuestaHTTP Como Cadena
+    Definir conexionExitosa Como Logico
+    
+    Escribir "=== SIMULADOR DE PETICIÓN HTTP A LLM (TALLER 10) ==="
+    Escribir "Ingrese la consulta/prompt para el modelo de IA:"
+    Leer prompt
+    
+    // Paso 1: Usuario hace clic en "Enviar" -> Crear Petición HTTP
+    Escribir ""
+    Escribir "[Cliente Web] Usuario hizo clic en 'Enviar'."
+    peticionHTTP <- CrearPeticionHTTP(prompt)
+    Escribir "[Cliente Web] Petición HTTP construida con éxito."
+    
+    // Paso 2: Envío de la petición por la red
+    Escribir "[Red] Enviando petición HTTP al servidor backend..."
+    conexionExitosa <- Verdadero // Simulación de conexión estable
+    
+    // Paso 3: Evaluación de la petición y respuesta del LLM
+    Si conexionExitosa Entonces
+        Escribir "[Servidor] Petición recibida correctamente."
+        respuestaHTTP <- ProcesarPromptLLM(prompt)
+        
+        // Paso 4: Recepción y despliegue de respuesta al usuario
+        Escribir ""
+        Escribir "[Cliente Web] Respuesta HTTP recibida:"
+        Escribir respuestaHTTP
+        Escribir "[Cliente Web] Mostrando respuesta en la interfaz del usuario."
+    Sino
+        Escribir "[Error] No se pudo establecer conexión con el servidor LLM."
+    FinSi
+
+FinAlgoritmo
