@@ -1,0 +1,17 @@
+[2026-08-19 22:43:41] Inicio de sesión de la MiniTienda
+[2026-08-19 22:44:21] Inicio de sesión de la MiniTienda
+[2026-08-19 22:45:19] Inicio de sesión de la MiniTienda
+[2026-08-19 22:48:48] Inicio de sesiÃ³n de la MiniTienda
+[2026-08-19 22:49:18] Inicio de sesiÃ³n de la MiniTienda
+[2026-08-19 22:49:43] Venta exitosa (Auto): 2x Laptop por $1600.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 5x Mouse por $125.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 12x Teclado por $513.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 3x Monitor por $450.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 10x Mouse por $237.50
+[2026-08-19 22:49:43] Venta exitosa (Auto): 1x Laptop por $800.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 4x Teclado por $180.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 2x Monitor por $300.00
+[2026-08-19 22:49:43] Venta exitosa (Auto): 15x Mouse por $356.25
+[2026-08-19 22:49:43] Venta exitosa (Auto): 2x Teclado por $90.00
+[2026-08-19 22:49:43] Intento de venta fallido. ID inexistente: 99
+[2026-08-19 22:51:18] Inicio de sesiÃ³n de la MiniTienda
